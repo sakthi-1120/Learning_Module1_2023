@@ -2,8 +2,7 @@
 #include <stdint.h>
 
 void print_exponent_parts(double x) {
-     uint64_t bits;
-    memcpy(&bit
+    uint64_t bits;
     memcpy(&bits, &x, sizeof(bits));
     uint64_t exponent = (bits >> 52) & 0x7FF;
     char hex_exponent[16];
